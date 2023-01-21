@@ -1,0 +1,16 @@
+.box {
+    width: 50%;
+    height: 50px;
+}
+.box1 {
+    background-color: red;
+}
+.box2 {
+    background-color: blue;
+}
+.box3 {
+    background-color: yellow;
+    padding: 10px;
+    border-width: 10px;
+    border-style:inherit;
+}
