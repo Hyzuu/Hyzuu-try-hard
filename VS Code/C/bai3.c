@@ -18,6 +18,7 @@ void main() {
         }
         else {
             printf("NO\n");
+            printf("realy");
         }
     }
 }
