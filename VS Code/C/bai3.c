@@ -14,7 +14,7 @@ void main() {
         int b = arr[i][1];
         int c = arr[i][2];
         if (a == b + c || b == a + c || c == a + b) {
-            printf("YES\n");
+            printf("YESsss\n");
         }
         else {
             printf("NO\n");
