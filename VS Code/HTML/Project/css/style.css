@@ -21,6 +21,9 @@ html {
 
 }
 
+.clear {
+    clear:both;
+}
 #header{
     height: 46px;
     background-color: #000;
@@ -158,6 +161,27 @@ html {
     font-size: 15px;
     text-align: justify;
     line-height: 1.4;
+}
+
+#content .member-list {
+    margin-top: 48px;
+}
+
+#content .member-item {
+    float: left;
+    width: 33.33333%;
+    text-align: center;
+
+}
+
+#content .member-name {
+    font-size: 15px;
+}
+
+#content .member-img {
+    width: 154px;
+    margin-top: 15px;
+    border-radius: 4px;
 }
 
 #footer{
