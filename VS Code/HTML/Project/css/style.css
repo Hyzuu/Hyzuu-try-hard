@@ -24,6 +24,10 @@ html {
 .clear {
     clear:both;
 }
+
+.text-white {
+    color: #fff !important;
+}
 #header{
     height: 46px;
     background-color: #000;
@@ -152,8 +156,8 @@ html {
     font-size: 15px;
     text-align: center;
     margin-top: 25px;
-    font-size: italic;
-    opacity: 0,6;
+    font-style: italic;
+    opacity: 0.6;
 }
 
 #content .about-text {
@@ -184,6 +188,118 @@ html {
     border-radius: 4px;
 }
 
+.Tour-section {
+    background: #000;
+}
+
+.ticket-list {
+    background: #fff;
+    margin-top: 40px;
+}
+
+.ticket-list li {
+    font-size: 15px;
+    padding: 11px 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+.ticket-list .sold-out {
+    background-color: #f44336;
+    color: #fff;
+    padding: 3px 4px;
+    margin-left: 16px;
+}
+
+.ticket-list .quantity {
+    float: right;
+    width: 24px;
+    height: 24px;
+    background: #000;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+}
+
+/* Place */
+
+.place-list{
+    margin: 32px -8px 48px;
+}
+
+.place-item {
+    float: left;
+    width: 33.333333%;
+    padding: 0 8px;
+}
+
+.place-body {
+    background-color: #fff;
+    padding: 16px;
+    font-size: 15px;
+}
+
+.place-img {
+    width: 100%;
+    display: block;
+}
+
+.place-img:hover {
+    opacity: 0.6;
+}
+.place-headig {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.place-time {
+    margin: 15px 0;    
+    color: #757575;
+}
+
+.place-desc {
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+.place-buy-btn {
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    display: inline-block;
+}
+
+.place-buy-btn:hover {
+    color: #000;
+    background-color: #ccc;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal-container {
+    background-color: #fff;
+    width: 900px;
+    min-height: 200px;
+}
+header.modal-header {
+    background: #009688;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: #fff;
+}
 #footer{
 
 }
