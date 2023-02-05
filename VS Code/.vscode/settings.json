@@ -1,6 +1,10 @@
 {
     "files.associations": {
         "iostream": "cpp",
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "random": "c",
+        "bai_2.C": "cpp",
+        "stdio.h": "c",
+        "bai_4.C": "cpp"
     }
 }
