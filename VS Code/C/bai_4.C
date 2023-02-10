@@ -1,19 +1,26 @@
 #include<stdio.h>
 int main() {
-    int N;
-    printf("Nhap vao N: ");
-    scanf("%d", &N);
-    int sum = 0;
-    for (int i = 1; i < N; i++) {
-        if (N % i == 0) {
-            sum += i;
+    int n, m, K;
+    int A[100], B[100];
+    printf("Nhap vao so phan tu cua A: ");
+    scanf("%d", &n);
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &A[i]);
+    }
+    printf("Nhap vao so phan tu cua B: ");
+    scanf("%d", &m);
+    for (int i = 0; i < m; i++) {
+        scanf("%d", &B[i]);
+    }
+    printf("Nhap vao vi tri muon chen day B vao day A: ");
+    scanf("%d", &K);
+    for (int i = K; i < n; i++) {
+        A[i + m] = A[i];
+    }
+    for (int i = 0; i < n + m; i++) {
+        if (i >= K && i <= n - 1) {
+            
         }
     }
-    if (sum == N) {
-        printf("Yes");
-    }
-    else {
-        printf("No");
-    }
-    return 0;
+
 }
