@@ -1,12 +1,16 @@
 #include<stdio.h>
-void main() {
-    float a, b, c;
-    printf("Nhap vao ba canh tam giac: ");
-    scanf("%f %f %f", &a, &b, &c);
-    if (a + b > c && a + c > b && b + c > a) {
-        printf("Do la mot tam giac");
+int main() {
+    int n, arr[100];
+    printf("Nhap n: ");
+    scanf("%d", &n);
+    for (int i = 0; i < n; i++) {
+        printf("arr[%d] = ", i);
+        scanf("%d", &arr[i]);
     }
-    else {
-        printf("Day ko phai la ba canh cua mot tam giac");
+    for (int i = 0; i < n; i++) {
+        if (arr[i] % 10 == 0) {
+            printf("%d ", arr[i]);
+        }
     }
+    return 0;
 }

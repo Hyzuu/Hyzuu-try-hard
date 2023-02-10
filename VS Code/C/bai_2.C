@@ -1,19 +1,23 @@
 #include<stdio.h>
 int main() {
-    int N;
-    printf("Nhap N: ");
-    scanf("%d", &N);
-    int i = 2;
-    int n = 1;
-    while (i <= N) {
-        if (i % 2 == 0) {
-            n += i;
-        }  
-        else if (i % 2 != 0) {
-            n -= i;
-        }
-        i++;
+    int n, arr[100];
+    printf("Nhap n: ");
+    scanf("%d", &n);
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
     }
-    printf("%d", n);
+    printf("Cac so chan la: ");
+    for (int i = 0; i < n; i++) {
+        if (arr[i] % 2 == 0) {
+            printf("%d ", arr[i]);
+        }
+    }
+    printf("\n");
+    printf("Cac so le la: ");
+    for (int i = 0; i < n; i++) {
+        if (arr[i] % 2 != 0) {
+            printf("%d ", arr[i]);
+        }
+    }
     return 0;
 }

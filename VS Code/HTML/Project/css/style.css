@@ -294,10 +294,11 @@ html {
 }
 .modal-container {
     background-color: #fff;
-    width: 900px;
+    width: 700px;
     max-width: calc(100% - 32px);
     min-height: 200px;
     position: relative;
+    animation: modalFadein ease .4s;
 }
 header.modal-header {
     background: #009688;
@@ -372,4 +373,15 @@ header.modal-header {
 }
 #footer{
 
+}
+
+@keyframes modalFadein {
+    from {
+        opacity: 0;
+        transform: translateY(-140px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

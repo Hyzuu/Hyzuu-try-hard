@@ -1,35 +1,21 @@
 #include<stdio.h>
-int main() {
-    int N;
-    printf("Nhap N: ");
-    scanf("%d", &N);
-    int thu = 0;
-    for (int i = 1; i < N; i++) {
-        if (N % i == 0) {
-            thu++;
-        }
+void main() {
+    int arr[10], a, b, n;
+    printf("Nhap so phan tu trong mang: ");
+    scanf("%d", &n);
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
     }
-    int count = 0;
-    if (thu == 1) {
-        printf("%d ", N);
-        for (int i = N + 1; i < 1000; i++) {
-            int thu2 = 0;
-            for (int j = 1; j < i; j++) {
-                if (i % j == 0) {
-                    thu2++;
-                }    
-            }
-            if (thu2 == 1) {
-                printf("%d ", i);
-                count++;
-            }
-            if (count == 3) {
-                break;
-            }
-            thu2 = 0;
-        }
+    n += 1;
+    printf("Nhap vao vi tri gia tri muon them vao: ");
+    scanf("%d", &a);
+    printf("Nhap vao gia tri: ");
+    scanf("%d", &b);
+    for (int i = n; i > a + 1; i--) {
+        arr[i] = arr[i - 1];
     }
-    else {
-        printf("No");
+    arr[a + 1] = b;
+    for (int i = 0; i < n; i++) {
+        printf("%d ", arr[i]);
     }
 }
