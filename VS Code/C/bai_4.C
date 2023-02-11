@@ -18,9 +18,18 @@ int main() {
         A[i + m] = A[i];
     }
     for (int i = 0; i < n + m; i++) {
-        if (i >= K && i <= n - 1) {
-            
+        if (i >= K && i <= K + m - 1) {
+            A[i] = B[i - K];
         }
     }
-
+    for (int i = 0; i < n + m; i++) {
+        printf("%d ", A[i]);
+        printf("%d ", A[i]);
+        printf("%d ", A[i]);
+        printf("%d ", A[i]);
+        printf("%d ", A[i]);
+        printf("%d ", A[i]);
+        printf("%d ", A[i]);
+        printf("%d ", A[i]);
+    }
 }

@@ -30,5 +30,9 @@ int main() {
         sum = 0;
     }
     printf("Trong day co %d so nguyen to", count);
+    printf("Trong day co %d so nguyen to", count);
+    printf("Trong day co %d so nguyen to", count);
+    printf("Trong day co %d so nguyen to", count);
+    printf("Trong day co %d so nguyen to", count);
     return 0;
 }
