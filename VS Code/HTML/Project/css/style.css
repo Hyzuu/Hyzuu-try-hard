@@ -6,6 +6,7 @@
 html {
     font-family: Arial, Helvetica, sans-serif;
 }
+
 /* 
 1. Từ ngoài vào trong
 2. Từ trên xuống dưới
@@ -21,13 +22,47 @@ html {
 
 }
 
-.clear {
-    clear:both;
+.mt-8 {
+    margin-top: 8px !important;
+}
+
+.mt-16 {
+    margin-top: 16px !important;
 }
 
 .text-white {
     color: #fff !important;
 }
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col-half {
+    width: 50%;
+}
+
+.col-third {
+    width: 33.33333%;
+}
+
+.col-full {
+    width: 100%;
+}
+
 #header{
     height: 46px;
     background-color: #000;
@@ -171,11 +206,8 @@ html {
     margin-top: 48px;
 }
 
-#content .member-item {
-    float: left;
-    width: 33.33333%;
-    text-align: center;
-
+.text-center {
+    text-align: center !important;
 }
 
 #content .member-name {
@@ -225,13 +257,8 @@ html {
 /* Place */
 
 .place-list{
-    margin: 32px -8px 48px;
-}
-
-.place-item {
-    float: left;
-    width: 33.333333%;
-    padding: 0 8px;
+    margin-top: 32px;
+    margin-bottom: 48px;    
 }
 
 .place-body {
@@ -274,6 +301,39 @@ html {
 .place-buy-btn:hover {
     color: #000;
     background-color: #ccc;
+}
+
+/* content */
+
+.contact-info {
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+.contact-content {
+    margin-top: 48px;
+}
+
+.contact-info i[class*="ti-"] {
+    width: 30px;
+    display: inline-block;
+}
+
+.contact-form {
+    font-size: 15px;
+}
+
+.contact-form .form-control {
+    padding: 10px;
+    width: 100%;
+}
+
+.contact-form .form-submit-btn {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 16px;
+    float: right;
+
 }
 
 /* modal */
