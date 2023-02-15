@@ -34,6 +34,24 @@ html {
     color: #fff !important;
 }
 
+.btn {
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    display: inline-block;
+}
+
+.btn:hover {
+    color: #000;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.pull-right {
+    float: right;
+}
+
 .row {
     margin-left: -8px;
     margin-right: -8px;
@@ -48,6 +66,10 @@ html {
 .row::after {
     content: "";
     display: block;
+    clear: both;
+}
+
+.clear {
     clear: both;
 }
 
@@ -177,7 +199,7 @@ html {
 #content .content-section {
     width: 800px;
     margin: 0 auto;
-    padding: 64px 0;
+    padding: 64px 0 112px;
 }
 
 .content-section .section-heading {
@@ -258,7 +280,6 @@ html {
 
 .place-list{
     margin-top: 32px;
-    margin-bottom: 48px;    
 }
 
 .place-body {
@@ -290,19 +311,6 @@ html {
     margin-bottom: 10px;
 }
 
-.place-buy-btn {
-    background-color: #000;
-    color: #fff;
-    text-decoration: none;
-    padding: 8px 16px;
-    display: inline-block;
-}
-
-.place-buy-btn:hover {
-    color: #000;
-    background-color: #ccc;
-}
-
 /* content */
 
 .contact-info {
@@ -326,6 +334,7 @@ html {
 .contact-form .form-control {
     padding: 10px;
     width: 100%;
+    border: 1px solid #ccc;
 }
 
 .contact-form .form-submit-btn {

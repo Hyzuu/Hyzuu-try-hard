@@ -1,11 +1,20 @@
 #include<iostream>
 using namespace std;
+// class Account {
+// public:
+//     int id;
+//     string name;
+//     int balance;
+//     Account(int id, string name) {
+//         this -> id = id;
+//         this -> name = name;
+//     }
+//     void xuat() {
+//         printf("%d %s", id, name);
+//     }
+// };
 int main() {
-    int *arr = new int[10];
-    for (int i = 0; i < 10; i++) {
-        arr[i] = i;
-    }
-    for (int i = 0; i < 10; i++) {
-        cout << arr[i];
-    }
+    string name;
+    name = "Hyzuu";
+    printf("%s", name);
 }
