@@ -2,6 +2,7 @@
     "files.associations": {
         "iostream": "cpp",
         "ostream": "cpp",
+<<<<<<< HEAD
         "*.tcc": "cpp",
         "cctype": "cpp",
         "clocale": "cpp",
@@ -20,5 +21,12 @@
         "system_error": "cpp",
         "type_traits": "cpp",
         "typeinfo": "cpp"
+=======
+        "random": "c",
+        "bai_2.C": "cpp",
+        "stdio.h": "c",
+        "bai_4.C": "cpp",
+        "xoa_ham.C": "cpp"
+>>>>>>> 19330b5662c4e1c1b050c35e8aed806386fcfedb
     }
 }
