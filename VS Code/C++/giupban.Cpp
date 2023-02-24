@@ -1,37 +1,21 @@
-#include<iostream>
-using namespace std;
+#include<stdio.h>
 int main() {
-    int day, month, year;
-    printf("Nhap ngay thang nam: ");
-    scanf("%d %d %d", &day, &month, &year);
-    printf("%d/%d/%d \n", day, month, year);
-    int count;
-    if (month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12) {
-        count = 32 - day;
-        day = 1;
-        month++;
+    int n;
+    int arr[100];
+    printf("Nhap n: ");
+    scanf("%d", &n);
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
     }
-    else if (month == 4 || month == 6 || month == 9 || month == 11) {
-        count = 31 - day;
-        day = 1;
-        month++;
-    }
-    else if (month == 2) {
-        count = 29 - day;
-        day = 1; 
-        month++;
-    }
-    printf("%d %d \n",day, month);
-    for (int i = month; i < 13; i++) {
-        if (month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12) {
-            count += 31;
+    for (int i = 0; i < n; i++) {
+        int sum = 0;
+        for (int j = 1; j < arr[i]; j++) {
+            if (arr[i] % j == 0) {
+                sum++;
+            }
         }
-        else if (month == 4 || month == 6 || month== 9 || month == 11) {
-            count += 30;
-        }
-        else if (month == 2) {
-            count += 29;
+        if (sum == 1) {
+            printf("%d", arr[i]);
         }
     }
-    printf("Khoang cach den ngay dau nam sau la: %d", count);
 }

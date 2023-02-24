@@ -11,9 +11,7 @@ int main() {
     int k = n;
     for (int i = 0; i < n; i++) {
         int sum = 0;
-
         for (int k = arr[i][0]; k <= arr[i][1]; k++) {
-            int sum = 0;
             int text = 0;
             for (int e = 1; e < k; e++) {
                 if (k % e == 0) {
@@ -23,7 +21,6 @@ int main() {
             if (text == 1) {
                 sum += k;
             }
-            text = 0;
         }
         printf("%d", sum);
         sum = 0;

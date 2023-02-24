@@ -4,7 +4,6 @@
     box-sizing:border-box;
 }
 html {
-    scroll-behavior: smooth;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -20,7 +19,6 @@ html {
 3. Màu sắc
 4. Kiểu dáng (kiểu chữ, hình vuông, tròn) */
 #main{
-
 }
 
 .mt-8 {
@@ -29,6 +27,10 @@ html {
 
 .mt-16 {
     margin-top: 16px !important;
+}
+
+.mt-32 {
+    margin-top: 32px !important;
 }
 
 .text-white {
@@ -152,15 +154,32 @@ html {
     font-size: 14px;
 }
 
+.mobile-menu-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#header .mobile-menu-btn,
 #header .search-btn {
     float: right;
     padding: 0 21px;
 }
-
+#header .mobile-menu-btn:hover,
 #header .search-btn:hover {
     cursor: pointer;
     background-color: #f44336;
 }
+
+#header .mobile-menu-btn:hover {
+    background-color: #ccc;
+}
+
+#header .mobile-menu-btn:hover .menu-icon {
+    color: #000;
+}
+
+#header .menu-icon,
 #header .search-icon {
     color: #fff;
     font-size: 20px;
@@ -198,9 +217,12 @@ html {
 }
 
 #content .content-section {
-    width: 800px;
+    width: 800px;   
+    max-width: 100%;
     margin: 0 auto;
     padding: 64px 0 112px;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 .content-section .section-heading {
@@ -226,7 +248,7 @@ html {
 }
 
 #content .member-list {
-    margin-top: 48px;
+    margin-top: 32px;
 }
 
 .text-center {
@@ -280,7 +302,7 @@ html {
 /* Place */
 
 .place-list{
-    margin-top: 32px;
+    margin-top: 16px;
 }
 
 .place-body {
@@ -345,8 +367,50 @@ html {
     float: right;
 }
 
-map-selection img {
+.map-section img {
     width: 100%;
+}
+
+
+/* begin footer */
+#footer{
+    padding: 64px 16px;
+    text-align: center;
+}
+
+.socials-list {
+    font-size: 24px;
+}
+
+#footer .socials-list a {
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+}
+#footer .coppyright a:hover,
+#footer .socials-list a:hover {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+
+#footer .coppyright{
+    margin-top: 15px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+#footer .coppyright a{
+    color: rgba(0, 0, 0, 0.6);
+}
+
+/* End footer */
+@keyframes modalFadein {
+    from {
+        opacity: 0;
+        transform: translateY(-140px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* modal */
@@ -443,47 +507,4 @@ header.modal-header {
 
 .modal-footer a {
     color: #2196F3;
-}
-
-/* begin footer */
-#footer{
-    padding: 64px 16px;
-    text-align: center;
-}
-
-
-
-.socials-list {
-    font-size: 24px;
-}
-
-#footer .socials-list a {
-    color: rgba(0, 0, 0, 0.6);
-    text-decoration: none;
-}
-#footer .coppyright a:hover,
-#footer .socials-list a:hover {
-    color: rgba(0, 0, 0, 0.4);
-}
-
-
-#footer .coppyright{
-    margin-top: 15px;
-    color: rgba(0, 0, 0, 0.6);
-}
-
-#footer .coppyright a{
-    color: rgba(0, 0, 0, 0.6);
-}
-
-/* End footer */
-@keyframes modalFadein {
-    from {
-        opacity: 0;
-        transform: translateY(-140px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
 }

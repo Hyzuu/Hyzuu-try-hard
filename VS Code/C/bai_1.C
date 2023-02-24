@@ -1,4 +1,10 @@
 #include<stdio.h>
+float chinhphoasfoasdof() {
+    float b = 5.5;
+    float c = 6.1;
+    printf("Hyzuu");
+    return b * c;
+}
 int main() {
     int N, arr[100];
     printf("Nhap N: ");
@@ -24,6 +30,6 @@ int main() {
     for (int i = 0; i < N; i++) {
         printf("%d ", arr[i]);
     }
-
+    chinhphoasfoasdof();
 }
 

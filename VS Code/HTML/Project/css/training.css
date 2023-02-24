@@ -1,12 +1,23 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: 0;
+    box-sizing: border-box;
     outline: none;
+    scroll-behavior: smooth;
 }
 
 html {
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    scroll-behavior: smooth;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.clear {
+    clear: both;
 }
 
 #heading {
@@ -14,16 +25,11 @@ html {
     height: 47px;
     width: 100%;
     position: fixed;
+    z-index: 1;
     left: 0;
     top: 0;
     right: 0;
 }
-
-.sub-nav {
-    display: inline-block;
-}
-
-
 
 .sub-nav  a {
     display: inline-block;
@@ -31,56 +37,313 @@ html {
     color: #fff;
     text-decoration: none;
     line-height: 47px;
-    padding: 0 24px;
+    padding: 0 17px;
 }
 
-.sub-nav > a {
-    position: relative;
-}
 
 .nav a {
     text-decoration: none;
     color: #fff;
 }
 
-
-
 .nav {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position: relative;
     display: inline-block;
-    position: absolute;
-
-}
-
-.nav {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3) ;
-}
-
-.nav {
 }
 
 .nav-li {
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3) ;
+
 }
 
-.nav-li li {
+
+
+#heading .nav-li li {
     display: none;
     color: #000;
     list-style: none;
     padding: 10px 0 10px 15px;
     min-width: 130px;
-    border-bottom: 1px solid #ccc;
 }
 
-.sub-nav a:hover,
-.sub-nav  {
+#heading .nav:hover li {
+    display: block;
+}
+.nav:hover > a {
+    background-color: #ccc;
+    color: #000;
+}
+.nav .nav-li li:hover {
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.nav:hover .nav li {
+    display: block
+}
+
+.sub-nav a:hover {
     background-color: #ccc;
     color: #000;
 }
 
-.nav-li:hover li {
-    display: block;
+/* begin slider */
+#slider {
+    position: relative;
+    padding-top: 50%;
+    margin-top: 47px;
+    background: url(/HTML/Project/img/slider/newyork.jpg) top center / cover no-repeat;
 }
 
-.nav-down {
+.slider-heading {
     color: #fff;
-    font-size: 12px;
+    font-size: 15px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    bottom: 0;
+    padding: 32px 16px;
+    text-align: center;
+}
+.slider-heading h3 {
+    margin: 10px 0;
+    font-weight: 400;
+    font-size: 24px;
+}
+.slider-heading p {
+    padding: 10px 0;
+}
+/* End slider */
+
+
+/* begin content */
+
+#content {
+
+}
+
+.content-band {
+    margin: 0 auto;
+    padding: 64px 16px ;
+    max-width: 800px;
+}
+
+#content .content-heading {
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    letter-spacing: 4px;
+    font-size: 30px;
+}
+
+#content .content-sub {
+    display: flex;
+    justify-content:space-around;
+    opacity: 0.6;
+    padding-bottom: 20px;
+    text-align: justify;
+    font-size: 15px;
+    font-family: "Lato", sans-serif;
+    line-height: 1.5;
+}
+
+#content .content-post {
+    line-height: 1.5;
+    font-size: 15px;
+    text-align: justify;
+}
+
+.content-band-pic {
+    padding: 32px 0;    
+}
+
+.pic-band {
+    padding: 32px 0;
+    width: 33.33333%;
+    float: left;
+    text-align: center;
+}   
+
+.pic-cam {
+    width: 154px;
+    border-radius: 4px;
+}
+/* End content */
+
+/* begin tour-date */
+#tour-date {
+    width: 100%;
+    background-color: #000;
+}
+
+.tour-heading {
+    text-transform: uppercase;
+}
+
+.tour-table {
+    background-color: #fff;
+    margin-top: 20px;
+}
+.tour-table li {
+    border-bottom: 1px solid #ccc;
+    padding: 8px 16px;
+    font-size: 15px;
+}
+
+.tour-table .sold-out {
+    opacity: 1;
+    display: inline-block;
+    font-size: 15px;
+    color: #fff;
+    margin-left: 20px;
+    padding: 2px 8px;
+    background-color: #ff1302;
+}
+
+.tour-table .quantity {
+    background-color: #000;
+    color: white;
+    font-size: 15px;
+    float: right;
+    border-radius: 50%;
+    padding: 2px 7px;
+}
+
+.tour-places {
+    margin: 0 -8px;
+}
+
+.tour-place {
+    margin-top: 30px;
+    float: left;
+    width: 33.3333%;
+    padding: 0 8px;
+}
+
+.pic-content {
+    background-color: #fff;
+    padding: 20px 15px;
+}
+
+.tour-city-time {
+    padding: 20px 0;
+    opacity: 0.7;
+}
+
+.tour-pic {
+    width: 100%;
+    display: block;
+    font-size: 15px;
+}
+
+.tour-pic:hover {
+    opacity: 0.6;
+}
+
+.tour-button {
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+}
+
+.tour-button:hover {
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+/* End tour date */
+
+/* Begin contact */
+
+.contact-content {
+    margin-top: 40px;
+}
+
+.contact-left {
+    font-size: 18px;
+    width: 50%;
+    float: left;
+}
+.contact-left > p{
+    padding: 5px 0;
+}
+
+.contact-left p i {
+    margin-right: 5px;
+}
+
+.contact-form {
+    float: left;
+    width: 50%;
+}
+
+.input-row1 {
+    margin: 0 -8px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 8px;
+}
+
+.input-name {
+    width: 50%;
+    float: left;
+    padding: 8px;
+}
+
+.input-email {
+    width: 50%;
+    float: left;
+    padding: 8px;
+}
+
+.input-message {
+    padding: 10px 0 10px 5px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.contact-submit {
+    float: right;
+    margin: 15px 0;
+    padding: 10px 15px;
+    background-color: #000;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+}
+
+.contact-submit:hover {
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+/* End contact */
+
+.map-img {
+    width: 100%;
+}
+
+.footer-icon {
+    text-align: center;
+    padding: 64px 0;
+    font-size: 20px;
+}
+
+.footer-sub {
+    font-size: 15px;
+    padding: 20px 0;
+    opacity: 0.7;
+}
+
+#footer a {
+    color: inherit;
 }
