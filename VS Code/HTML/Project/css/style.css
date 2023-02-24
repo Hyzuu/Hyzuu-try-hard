@@ -265,6 +265,15 @@ html {
     border-radius: 4px;
 }
 
+<<<<<<< HEAD
+.tour_section {
+    background-color: #000;
+    color: #fff;
+}
+
+
+
+=======
 /* Begin Tour */
 .Tour-section {
     background: #000;
@@ -508,3 +517,21 @@ header.modal-header {
 .modal-footer a {
     color: #2196F3;
 }
+<<<<<<< HEAD
+=======
+>>>>>>> 19330b5662c4e1c1b050c35e8aed806386fcfedb
+#footer{
+
+}
+
+@keyframes modalFadein {
+    from {
+        opacity: 0;
+        transform: translateY(-140px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+>>>>>>> 3cc286c60f4234e22b8429237a2f0c44bdcc6ec9

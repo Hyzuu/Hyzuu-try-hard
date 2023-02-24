@@ -2,10 +2,31 @@
     "files.associations": {
         "iostream": "cpp",
         "ostream": "cpp",
+<<<<<<< HEAD
+        "*.tcc": "cpp",
+        "cctype": "cpp",
+        "clocale": "cpp",
+        "cstdint": "cpp",
+        "cstdio": "cpp",
+        "cstdlib": "cpp",
+        "cwchar": "cpp",
+        "cwctype": "cpp",
+        "exception": "cpp",
+        "initializer_list": "cpp",
+        "iosfwd": "cpp",
+        "istream": "cpp",
+        "limits": "cpp",
+        "stdexcept": "cpp",
+        "streambuf": "cpp",
+        "system_error": "cpp",
+        "type_traits": "cpp",
+        "typeinfo": "cpp"
+=======
         "random": "c",
         "bai_2.C": "cpp",
         "stdio.h": "c",
         "bai_4.C": "cpp",
+<<<<<<< HEAD
         "xoa_ham.C": "cpp",
         "bai_1.C": "cpp",
         "bai3.C": "cpp",
@@ -15,5 +36,9 @@
         "baka.C": "cpp",
         "function.C": "cpp",
         "string": "cpp"
+=======
+        "xoa_ham.C": "cpp"
+>>>>>>> 19330b5662c4e1c1b050c35e8aed806386fcfedb
+>>>>>>> 3cc286c60f4234e22b8429237a2f0c44bdcc6ec9
     }
 }
