@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Project/Fonts/fontawesome-free-6.3.0-web/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+        }
+        .box {
+            margin: auto;
+            display: flex;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 20px;
+            box-shadow: 0 10px 8px rgba(0, 0, 0, 0.08);
+        }
+        .tick--icon {
+            font-size: 25px;
+        }
+        .box--tick--design {
+            background-color: green;
+            align-items: center;
+            margin-right: 20px;
+            border-radius: 50%;
+            padding: 2px;
+        }
+        
+        .X__icon {
+            font-size: 25px;
+            margin-left: 15px;
+        }
+        .box--1 {
+            border-left: 5px solid green;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box box--1">
+        <div class="box__icon__tick box--tick--design">
+            <i class="fa-sharp fa-solid fa-check tick--icon"></i>
+        </div>
+        <div class="box__content">
+            <h3>Success</h3>
+            <p>Anyone with access can view  your invited visitors</p>
+        </div>
+        <div class="box__icon__X">
+            <i class="fa-sharp fa-solid fa-xmark X__icon"></i>
+        </div>
+
+    </div>
+</body>
+</html>

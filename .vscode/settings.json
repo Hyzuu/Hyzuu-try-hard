@@ -1,0 +1,17 @@
+{
+    "files.associations": {
+        "iostream": "cpp",
+        "ostream": "cpp",
+        "function.C": "cpp",
+        "bai_1.C": "cpp",
+        "bai_2.C": "cpp",
+        "bai_3.C": "cpp",
+        "bai_4.C": "cpp",
+        "bai_5.C": "cpp",
+        "baka.C": "cpp",
+        "bai1.C": "cpp",
+        "bai2.C": "cpp",
+        "bai3.C": "cpp",
+        "sstream": "c"
+    }
+}
