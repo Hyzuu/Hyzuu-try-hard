@@ -1,15 +1,22 @@
-#include<stdio.h>
-#include<string.h>
+#include <stdio.h>
+#include <string.h>
+
+int is_alpha(char c) {
+    if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+        return 1;
+    return 0;
+}
+
 int main() {
-    char s[100];
-    printf("Nhap chuoi: ");
-    fgets(s, 100, stdin);
-    for (int i = 0; i < strlen(s); i++) {
-        if (s[i] >= 48 && s[i] <= 57) {
-            printf("%c", s[i]);
-            if (s[i + 1] > 57) {
-                printf("\n");
-            }
-        }
-    }
+    char name[100];
+    printf("Nhap ho ten: ");
+    fgets(name, sizeof(name), stdin);
+
+    int length = strlen(name);
+    printf("%d", length);
+
+   
+
+    
+    return 0;
 }

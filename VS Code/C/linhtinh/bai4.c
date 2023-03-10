@@ -14,10 +14,21 @@ void xoa_khoang_trong(char* s) {
             s[k++] = s[i];
         }
     }
+    s[k] = '\0';
+}
+void inhoa(char s[100]) {
+    for (int i = 0; i < strlen(s); i++) {
+        if (s[i] == 32) {
+            s[i + 1] -= 32;
+        }
+    }
 }
 int main() {
     char s[100];
     fgets(s, 100, stdin);
     xoa_khoang_trong(s);
-    puts(s);
+    strlwr(s);
+    s[0] -= 32;
+    inhoa(s);
+    printf("%s", s);
 }
