@@ -51,7 +51,6 @@ html {
     padding-left: 5px;
     padding-right: 5px;
     width: 20%;
-
 }
 
 .grid__column-10 {
@@ -160,4 +159,48 @@ html {
     align-items: center;
     background-color: var(--white-color);
     justify-content: space-between;
+}
+
+
+/* Pagination */
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.pagination-item {
+    padding: 0 12px;
+}
+
+.pagination-item--active .pagination-item__link {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.pagination-item--active .pagination-item__link:hover {
+    background-color: #ed5c3f;
+}
+
+.pagination-item__link {
+    --height: 30px;
+    height: var(--height);
+    display: block;
+    text-decoration: none;
+    color: #939393;
+    font-size: 1.6rem;
+    min-width: 40px;
+    text-align: center;
+    line-height: var(--height);
+    border-radius: 2px;
+}
+
+.pagination-item__icon {
+
+}
+
+.footer {
+
 }

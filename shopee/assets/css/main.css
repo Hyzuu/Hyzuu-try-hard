@@ -715,6 +715,7 @@
     margin: 15px 0 0 9px;
 }
 
+
 .category-item-active .category-item__link {
     color: var(--primary-color);
 }
@@ -733,6 +734,17 @@
 
 .category-item {
     padding-left: 8px;
+    position: relative;
+}
+
+.category-item::after {
+    content: "";
+    border-bottom: 1px solid #E1E1E1;
+    /* width: 100%; */
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+    right: 16px;
 }
 
 .category-item__link {
@@ -742,7 +754,7 @@
     text-decoration: none;
     font-size: 1.4rem;
     display: block;
-    padding: 12px;
+    padding: 10px 12px;
     transition: right linear .2;
 }
 
@@ -836,6 +848,7 @@
     padding: 8px 16px;
     font-size: 1.4rem;
     display: none;
+    z-index: 1;
 }
 
 .select-input__list::before {
@@ -1056,7 +1069,79 @@ i.home-product-item__like-icon-fill {
     top: 4px;
 }
 
+.home-product__pagination {
+    margin: 48px 0 32px;
+}
+
+/* footer */
 
 .footer {
+    padding-top: 16px;
+    border-top: 4px solid var(--primary-color);
+}
 
+.footer__heading {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: var(--text-color);
+}
+
+.footer-list {
+    padding-left: 0;
+    list-style: none;
+}
+
+.footer-item__link {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #737373;
+    padding: 7px 0;
+    display: block;
+    display: flex;
+    align-items: center;
+}
+
+.footer-item__link:hover {
+    color: var(--primary-color);
+}
+
+.footer-item__icon {
+    font-size: 1.6rem;
+    margin-top: -1px;
+    margin-right: 8px;
+}
+
+.footer__download {
+    display: flex;
+}
+
+.footer__download-qr {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    border: 1px solid var(--border-color);
+}
+
+.footer__download-apps {
+    margin-left: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer__download-app-img {
+    height: 16px;
+}
+
+.footer__bottom {
+    padding: 24px 0;
+    background-color: #f5f5f5;
+    margin-top: 24px;
+}
+
+.footer__text {
+    margin: 0;
+    font-size: 1.4rem;
+    text-align: center;
+    color: #737373;
 }
