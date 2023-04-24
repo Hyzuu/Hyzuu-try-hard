@@ -3,6 +3,7 @@ using namespace std;
 class Manager {
 private:
 	string name;
+	print()
 
 public:
 	Manager() {
