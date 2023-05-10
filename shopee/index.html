@@ -9,15 +9,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/grid.Css">
+    <link rel="stylesheet" href="./assets/css/responsive.Css">
     <link rel="icon" href="./assets/img/shoppee.png.crdownload" type="image/x-icon">
     <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.3.0-web/css/all.css">
 </head>
 <body>
     <div class="app">
         <header class="header">
-            <div class="grid">
+            <div class="grid wide">
 
-                <nav class="header__navbar">
+                <nav class="header__navbar hide-on-mobile-tablet">
                     
                     <ul class="header__navbar-list">
                         <li class="header__navbar-item header__navbar-item-separate">
@@ -98,7 +100,7 @@
                 </nav>
 
                 <div class="header-with-search">
-                    <div class="header__logo">
+                    <div class="header__logo hide-on-tablet">
                         <svg viewBox="0 0 192 65" class="header__logo-img">
                             <g fill-rule="evenodd">
                                 <path
@@ -156,7 +158,7 @@
                         <div class="header__cart-wrap">
                             <i class="fa-solid fa-cart-shopping header__cart-icon"></i>
                             <span class="header__cart-notice">3</span>
-                            <div class="header__card-list">
+                            <div class="header__card-list header__card-list--no-cart">
                                 <img src="./assets/img/No_cart.png" alt="anh hien thi" class="header__cart--no-cart-img">
                                 <p class="header__card-list-no-cart-msg">Chưa có sản phẩm</p>
                             </div>
@@ -169,7 +171,7 @@
         </header>
 
         <div class="container">
-            <div class="grid">
+            <div class="grid wide">
                 <div class="grid__row app-content">
                     <div class="grid__column-2">
                         <nav class="category">
@@ -675,10 +677,25 @@
 
                 </div>
             </div>
+
+            <ul class="header__sort-bar">
+                <li class="header__sort-item">
+                    <a href="" class="header__sort-link">Liên quan</a>
+                </li>
+                <li class="header__sort-item">
+                    <a href="" class="header__sort-link">Mới nhất</a>
+                </li>
+                <li class="header__sort-item">
+                    <a href="" class="header__sort-link">Bán chạy</a>
+                </li>
+                <li class="header__sort-item">
+                    <a href="" class="header__sort-link">Giá</a>
+                </li>
+            </ul>
         </div>
 
         <footer class="footer">
-            <div class="grid">
+            <div class="grid wide">
                 <div class="grid__row">
                     <div class="grid__column-2-4">
                         <h3 class="footer__heading">Chăm sóc khách hàng</h3>
@@ -760,7 +777,7 @@
             </div>
 
             <div class="footer__bottom">
-                <div class="grid">
+                <div class="grid wide">
                     <p class="footer__text">Bản quyền thuộc về Hyzuu</p>
                 </div>
             </div>

@@ -13,6 +13,7 @@
         "bai2.C": "cpp",
         "bai3.C": "cpp",
         "sstream": "c",
-        "new": "cpp"
+        "new": "cpp",
+        "lamtron.C": "cpp"
     }
 }
