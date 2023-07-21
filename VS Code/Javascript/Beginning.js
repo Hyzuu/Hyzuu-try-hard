@@ -1,18 +1,6 @@
-var firstName = 'Hyzuu';
-var lastName = 'Day';
-var fullName = "Hyzuu" + " " + lastName;
-var myFunction = function() {
-    alert("Hello");
+function cong(a, b) {
+    console.log('Hyzuu');
+    return a.toString() + b.toString();
 }
-console.log(fullName);
-myFunction();
-
-var myObject = {
-    name: "Hyzuu",
-    age: 19,
-    address: 'Da Nang',
-    myFunction: function() {
-
-    }
-};
-console.log('myObject', myObject);
+var result = cong(2, 8);
+console.log(result);
