@@ -194,6 +194,46 @@
     font-weight: 600;
 }
 
-.footer {
+.form {
 
+}
+
+.form__input {
+    margin-top: 10px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc; 
+    padding: 20px 2px;
+    outline: none;
+}
+
+.form__input:focus {
+    outline: 1px double #000;
+}
+
+.form__input__time {
+    padding-right: 900px;
+}
+
+.btn {
+    margin-top: 30px;
+    /* width: 40px; */
+    padding: 12px 20px;
+    border: none;
+}
+
+.btn:hover {
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.footer {
+    background-color: #f1f1f1;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+}
+
+.footer__link {
+    color: #000;
 }
