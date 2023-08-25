@@ -32,10 +32,36 @@ function renderCourses(courses) {
     listCorsesBlock.innerHTML = htmls.join("")
 }
 
+function createCourse(data, callback) {
+    var options = {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+            // 'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: JSON.stringify(data)
+    };
+    fetch(courseApi, options)
+        .then(function(response) {
+            return response.json();
+        })
+        .then(callback);
+}
+
 function handleCreateForm() {
     var createBtn = document.querySelector('#create');
 
     createBtn.onclick = function() {
-        alert();
+        var name = document.querySelector('input[name = "name"]').value;
+        var description = document.querySelector('input[name = "description"]').value;
+        console.log(description);
+        var formData = {
+            name: name,
+            description: description
+        };
+
+        createCourse(formData);
+        
     }
 }
+
